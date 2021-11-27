@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="freelancer uk-background-gray-10 dark:uk-background-gray-100 dark:uk-text-gray-40">
+    
+<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 06:40:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KONSTANTYN ZIELINSKI</title>
+    <meta name="description" content="page description here">
+
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/space-grotesk/SpaceGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./assets/fonts/brand-icons/brand-icons.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/css/uikit.min.css" as="style">
+    <link rel="preload" href="./assets/css/theme/main.css" as="style">
+
+    <script src="./assets/js/app-head.js"></script>
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="./assets/css/theme/main.css">
+    <link rel="stylesheet" href="./assets/css/updates.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5JJP7FY91"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-B5JJP7FY91');
+    </script>
+</head>
+    <body>
+
+        <div class="wrap">
+            <!-- Header -->
+            <header class="uni-header uk-position-top">
+                <div class="uni-header-navbar uk-scrollnav-header" data-uk-sticky="top: 120; animation: uk-animation-slide-top">
+                    <div class="uk-container uk-container-large">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar="">
+                            <div class="uk-navbar-top">
+                                <div class="uk-navbar-left uk-flex-1">
+                                    <a class="uk-logo uk-navbar-item uk-h4 uk-h3@s uk-margin-remove dark:uk-text-gray-10" href="../index.html">KONSTANTYN.</a>
+                                    <a class="uk-logo uk-navbar-item uk-sticky-logo dark:uk-text-gray-10" href="../index.html">KONSTANTYN.</a>
+                                </div>
+
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Article -->
+            <article class="uni-article uk-section-large uk-section-2xlarge@m uk-padding-3xlarge-top">
+
+                <div class="uk-container">
+
+                    <header class="uk-flex-center uk-text-center uk-margin-large-bottom uk-margin-2xlarge-bottom@m" id="read_more">
+                        <div>
+                            <span class="uk-text-overline">developement</span>
+                            <h1 class="uk-h2 uk-h1@s uk-heading-hero@m uk-width-3xlarge@m uk-margin-medium-top@m">
+                                Choosing A State Management Library for Angular Enterprise Applications
+                            </h1>
+                            <ul class="uk-subnav uk-subnav-dot uk-flex-center uk-text-muted uk-margin-medium-top@m">
+                                <li><span>by</span>&nbsp;<span> 
+                                    konstantyn Zielinski</span></li>
+                                <li>1 September 2021</li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <img src="./assets/images/posts/post-2.jpg" alt="Post title" width="1920" height="1260">
+
+                    <div class="uk-margin-xlarge-top uk-margin-2xlarge-top@m">
+                        <div class="uk-container uk-container-small">
+                            <p class="uk-text-xlarge@m">
+                                Messaging based state management is a staple of enterprise-level applications. Not pursuing a Flux/Redux type of state management solution in a large application often results in unwanted side effects as there is no single source of truth. If you come from a React/Redux background, you may not be sure which popular Redux Angular implementation to go with for your next Angular enterprise application.</p>
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                Why use Redux/Flux in enterprise applications?
+                            </h2>
+                            <p class="uk-text-xlarge@m">
+                                A benefit to Redux is the ability to model complex data flow relationships between entities in the front end once and enjoying this predictable behavior in your app. You can then use tools like Redux DevTools to see exactly how data is flowing through your application, and even go back in time to see how the state of the UI changes over time.
+                                <br>  
+Furthermore, if you use Redux throughout your application, you can update Angular’s change detection strategy to OnPush.
+<br>  
+This drastically improves performance by only running change detection when a stateful variable used in a component is reassigned in memory and is trivial to get working when your state management library is implemented correctly.
+<br>  
+So which Angular Redux library should you use for your next project? In this article, I’ll be reviewing the most popular state management solutions in Angular and helping you decide which is best for your project. Currently leading the pack are NGRX, NGXS, and Nikita, which all use RXJS behind the scenes. You can avoid a state management library altogether by using RXJS directly. However, this is more appropriate for smaller projects, so discussion of using RXJS directly will not be discussed
+                                  
+                            </p>
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                TNGRX
+                            </h2>
+                            <p class="uk-text-xlarge@m">
+                                First, we will describe NGRX. It is the most popular state management library in Angular by far with 5,900 stars on Github. They have made strides to significantly reduce their boilerplate code as much as possible, making it a more desirable option in 2020. So we can see this in action, let’s create a simple store in NGRX.  
+                                <br>
+                                First let’s create our actions:  
+                                <br>
+                                <span class="text-code">
+
+                                    import { createAction } from '@ngrx/store';
+                                    <br>
+                                    export const feedAnimals = createAction('[Zoo] Feed');
+                                </span>
+                                <br>
+                            </p>
+
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                CRI-O and Containerd as alternatives
+                            </h2>
+                            <p class="uk-text-xlarge@m">
+                               And the accompanying reducer:
+                                <br>  
+                                <span class="text-code">
+
+                                    <br>import { createReducer, on } from '@ngrx/store';
+                                    <br>import { feedAnimals } from './zoo.actions';
+                                    <br> 
+                                    <br>export interface State {
+                                        <br>  name: string;
+                                        <br>  feed: boolean;
+                                        <br>}
+                                        <br>export const initialState: State = {
+                                            <br>  name: 'zoo',
+                                            <br>  feed: false
+                                            <br>};
+                                            <br> 
+                                            <br>const _zooReducer = createReducer(initialState,
+                                            <br>  on(feedAnimals, state => {...state, feed: !state.feed})
+                                            <br>);
+                                            <br> 
+                                            <br>export function zooReducer(state, action) {
+                                                <br>  return _zooReducer(state, action);
+                                                <br>} 
+                                                <br>
+                                    </span>
+                                <br>NGRX has migrated from using a rather bloated switch statement to a much more concise and clean style of using the on method from @ngrx/store.
+                                <br>And finally, the consuming component:
+                                <br>
+                                <span class="text-code">
+
+                                    <br>import { Component } from '@angular/core';
+                                    <br>import { Store, select } from '@ngrx/store';
+                                    <br>import { Observable } from 'rxjs';
+                                    <br>import { ZooState } from '../zoo.state';
+                                    <br>import { feedAnimals } from '../zoo.actions';
+                                    <br> 
+                                    <br>@Component({ ... })
+                                    <br>export class ZooComponent {
+                                        <br>  feed$: Observable<boolean>;
+                                            <br> 
+                                            <br>  constructor(private store: Store<ZooState>) {
+                                                <br>    this.feed$ = store.pipe(select('feed'));
+                                                <br>  }
+                                                <br> 
+                                                <br>  feedAnimals() {
+                                                    <br>    this.store.dispatch(feedAnimals());
+                                                    <br>  }
+                                                    <br>}
+                                                </span>
+                                <br>In the above snippet, you’re injecting the store service to dispatch actions and retrieve the current state. Be aware that if you need asynchronous data (e.g, making an HTTP call) you will have to create a separate file called an effect, which is a service that dispatches actions based on the results of asynchronous calls.
+                                <br>As far as tooling, NGRX has full functionality in Redux DevTools, making it a dependable option.
+
+                            </p>
+
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                NGXS
+                            </h2>
+                            <p class="uk-text-xlarge@m">
+                                Next is NGXS. So why NGXS? NGXS has less of a dependency on knowledge of RXJS, combines actions and reducers into one source file, and is more concise than NGRX.
+                                <br>Since reducers are not a concept found in NGRX, how do you mutate the store? NGRX actions mutate the store directly, saving you the mental capital of managing one more file for each store in your app.
+                                <br>
+                                <br>Let’s take a look at NGXS’s merging of reducers and actions:
+                                <br><span class="text-code">
+
+                                    <br>import { Injectable } from '@angular/core';
+                                    <br>import { State, Action, StateContext } from '@ngxs/store';
+                                    <br>// Actions
+                                    <br>export class FeedAnimals {
+                                        <br>  static readonly type = '[Zoo] FeedAnimals';
+                                        <br>}
+                                        <br>export interface ZooStateModel {
+                                            <br>  name: 'string';
+                                            <br>  feed: boolean;
+                                            <br>}
+                                            <br>@State<ZooStateModel>({
+                                                <br>  name: 'zoo',
+                                                <br>  defaults: {
+                                                    <br>    feed: false
+                                                    <br>  }
+                                                    <br>})
+                                                    <br>@Injectable()
+                                                    <br>export class ZooState {
+                                                        <br>  @Action(FeedAnimals)
+                                                        <br>  feedAnimals(ctx: StateContext<ZooStateModel>) {
+                                                            <br>    const state = ctx.getState();
+                                                            <br>    ctx.setState({
+                                <br>      ...state,
+                                <br>      feed: !state.feed
+                                <br>    });
+                                <br>  }
+                                <br>}
+                            </span>
+                                <br>Everything is essentially contained in this one file. Now let’s see how a component would consume ZooState:
+                                <br><span class="text-code">
+
+                                    <br>import { Store, Select } from '@ngxs/store';
+                                    <br>import { Observable } from 'rxjs';
+                                    <br>import { FeedAnimals } from './animal.actions';
+                                    <br>@Component({ ... })
+                                <br>export class ZooComponent {
+                                    <br>  @Select(state => state.feed) feed$: Observable<boolean>;
+                                <br>  constructor(private store: Store) {}
+                                <br>     feedAnimal(name: string) {
+                                    <br>         this.store.dispatch(new FeedAnimals());
+                                    <br>  }
+                                    <br>}
+                                </span>
+                                <br>Instead of wiring up your connections to the state in the constructor, you can use the @Select selector. This cuts this boilerplate in half.
+                            </p>
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                Conclusion
+                            </h2>
+                            <p class="uk-text-xlarge@m">
+                                NGRX is the most faithful implementation of Redux in Angular. It is by far the most verbose and most used by Angular developers. That being said, verbosity may be unwanted in a very large application where managing package size is a concern. NGXS has the edge here but Akita also removes the separation of actions and reducers with no sacrifice to readability.
+                                <br>
+                                My objective was to be as impartial as possible in outlining the options for state management in Angular but, after implementing state management in Angular over the years, these are my thoughts:
+                                <br>
+                                NGXS is a reduction in boilerplate from NGRX that is less significant now than a year ago. Why? NGRX have improved their library with better decorators and more concise methods. Where I would have leaned more heavily toward NGXS in the past to avoid excessive boilerplate code, I would now go with NGRX because of its longevity and better community support.
+                                <br>
+                                Akita is exciting in that it is an object-oriented departure from what we have seen in the past, yet it is still recognizably Redux. Although it has seen significant adoption it is still behind even NGXS in that downloads – but, with full Redux DevTools and Angular Ivy support, it’s an option worth considering for future projects.
+                                    
+                            </p>
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                Akita
+                            </h2>
+                            <p class="uk-text-xlarge@m">
+<br>Akita’s angle is attracting developers that are more agreeable to object-oriented design principles as opposed to the functional programming style of the preceding options. Akita is deployed in production by its creator Datorama, giving them a degree of accountability in creating a library suitable for production applications. The other benefit to Akita is its focus on eliminating boilerplate, which is the most common developer grievance with NGRX. It is also not exclusive to Angular as it can be used with React, VueJS, etc.
+<br>
+<br>Let’s create our ZooStore in Akita.
+<br><span class="text-code">
+<br>    import { Store, StoreConfig } from '@datorama/akita';
+<br>    export interface ZooState {
+<br>        name: string;
+<br>        feed: boolean;
+<br>    }
+<br>    export function createInitialState(): SessionState {
+<br>        return {
+<br>            feed: false,
+<br>            name: 'zoo'
+<br>        };
+<br>    }
+<br>    @StoreConfig({ name: 'zoo' })
+<br>    export class ZooStore extends Store<ZooState> {
+<br>        constructor() {
+<br>            super(createInitialState());
+<br>        }
+<br>    }</span>
+<br>    Next let’s take a look at Akita’s version of Redux “actions”, which are described as updates in Akita-speak.
+<br>    
+<br>    <span class="text-code">
+<br>        import { ZooStore } from './zoo.store';
+<br>        
+<br>        export class ZooService {
+<br>            constructor(private zooStore: ZooStore) {}
+<br>            updateFeed() {
+<br>                this.zooStore.update(state => ({
+<br>                    feed: !state.feed
+<br>                }));
+<br>            } 
+<br>        }
+<br>    </span>
+<br>While not as concise as NGXS, the argument can be made that this is the most readable implementation of the Redux design pattern. It is also reminiscent of traditional Angular services, making the app more approachable to both veterans and newcomers to Redux-type state management.
+<br>
+<br>Next look at a query with Akita, which is their version of selectors:
+<br><span class="text-code">
+<br>import { Query } from '@datorama/akita';
+<br>export class ZooQuery extends Query<ZooState> {
+<br>     // Two methods of retrieving from the state
+<br>  selectFeed$ = this.select(state => state.feed);
+<br>  selectName$ = this.select('name');
+<br>     // Multi selectors
+<br>  multi$ = this.select(['name', 'feed']) // { name, feed }
+<br>  multi$ = this.select([state => state.name, state => state.feed]) // [name, feed]
+<br> 
+<br>  constructor(protected store: ZooStore) {
+<br>    super(store);
+<br>  }
+<br>}
+<br></span>
+<br>The above snippet from the Akita docs perfectly encapsulates its OOP workflow. You’re extending classes and using the this context keyword as you would in traditional OOP applications as opposed to importing every keyword. As noted above, query in Akira is similar to a selector in NGRX and NGXS but with substantially less code and imports at no cost to code readability.
+<br>
+<br>Finally, let’s take a look at how you would consume those queries in a component:
+<br><span class="text-code">
+<br>
+<br>    @Component({ ... })
+<br>    export class ZooComponent implements OnInit {
+<br>        feed$: Observable<boolean>;
+<br>            constructor(private zooQuery: ZooQuery, private zooService: ZooService) {}
+<br>            ngOnInit() {
+<br>                this.feed$ = this.zooQuery.selectFeed$;
+<br>            }
+<br>            updateFeed() {
+<br>                this.zooService.updateFeed();
+<br>            }
+<br>        }
+<br>    </span>
+<br>As far as tooling, Akita is compatible with Redux DevTools and, as of version 1.9, supports executing actions from the DevTools console. There may be some bugs here, however, as there are some related bugs reported in Akita’s issues feed.
+                            </p>
+                            <h2 class="uk-h2 uk-h2@m uk-width-3xlarge@m">
+                                Conclusion
+                            </h2>
+                            <p class="uk-text-xlarge@m">
+                                
+                                <br>NGRX is the most faithful implementation of Redux in Angular. It is by far the most verbose and most used by Angular developers. That being said, verbosity may be unwanted in a very large application where managing package size is a concern. NGXS has the edge here but Akita also removes the separation of actions and reducers with no sacrifice to readability.
+                                <br>
+                                <br>My objective was to be as impartial as possible in outlining the options for state management in Angular but, after implementing state management in Angular over the years, these are my thoughts:
+                                <br>
+                                <br>NGXS is a reduction in boilerplate from NGRX that is less significant now than a year ago. Why? NGRX have improved their library with better decorators and more concise methods. Where I would have leaned more heavily toward NGXS in the past to avoid excessive boilerplate code, I would now go with NGRX because of its longevity and better community support.
+                                <br>
+                                <br>Akita is exciting in that it is an object-oriented departure from what we have seen in the past, yet it is still recognizably Redux. Although it has seen significant adoption it is still behind even NGXS in that downloads – but, with full Redux DevTools and Angular Ivy support, it’s an option worth considering for future projects.
+                            </p>
+                    </div>
+
+                    <div class="uk-margin-xlarge-top">
+                        <div class="uk-container uk-container-small">
+                            <div class="uk-grid uk-flex-between" data-uk-grid="">
+                                <div>
+                                    <ul class="uk-subnav">
+                                        <li><a href="minimal-blogf210.html?category=ux+design">#Redux</a></li>
+                                        <li><a href="minimal-blog4b9f.html?category=planing">#Flux </a></li>
+                                        <li><a href="minimal-blog9a34.html?category=design+ideas">#State_Management</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+            
+
+        </div>
+
+        <!-- Initiat Scripts -->
+        <script defer src="./cdn.jsdelivr.net/npm/uikit%403.6.18/dist/js/uikit.min.js"></script>
+        <script defer src="./assets/js/responsive-uk-attr.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/jquery%403.6.0/dist/jquery.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/swiper%406.5.0/swiper-bundle.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/feather-icons%404.28.0/dist/feather.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/typed.js%402.0.12/lib/typed.min.js"></script>
+        <script defer src="./cdn.jsdelivr.net/npm/animejs%403.2.1/lib/anime.min.js"></script>
+        <script defer src="./assets/js/app.js"></script>
+        <script defer src="./assets/js/swiper-helper.js"></script>
+        <script defer src="./assets/js/typed-helper.js"></script>
+        <script defer src="./assets/js/anime-helper.js"></script>
+        <script defer src="./assets/js/anime-helper-defined-timelines.js"></script>
+    </body>
+
+<!-- Mirrored from unistudio.co/html/dannel/pages/freelancer-single-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Nov 2021 06:40:03 GMT -->
+</html>
